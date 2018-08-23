@@ -28,7 +28,6 @@ protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
     // 使用createForLocation创建一个用于检查定位sdk运行时权限及定位开关的PermissionHelper对象
-    // 如果需要
     permissionHelper = PermissionHelper.createForLocation(this);
     permissionHelper.setOnPermissionGranted(new PermissionHelper.OnPermissionGranted() {
         @Override

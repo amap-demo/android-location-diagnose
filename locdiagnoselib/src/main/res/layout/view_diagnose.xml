@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="android.widget.FrameLayout"
+    tools:layout_width="match_parent"
+    tools:layout_height="match_parent">
+
+    <com.amap.loc.diagnose.problem.DiagnoseRadarView
+        android:id="@+id/activity_diagnose_radar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#45b7ff"/>
+
+    <com.amap.loc.diagnose.problem.DiagnoseResultView
+        android:id="@+id/activity_diagnose_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e6e6e6"
+        android:visibility="gone"/>
+
+</merge>

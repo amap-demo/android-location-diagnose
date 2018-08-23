@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    android:orientation="horizontal"
+    tools:background="#ffffff">
+
+    <!--<TextView-->
+        <!--android:id="@+id/item_view_diagnose_result_sub_title"-->
+        <!--android:layout_width="55dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="定位权限"-->
+        <!--android:textColor="#ec5757"-->
+        <!--android:textSize="10dp" />-->
+
+    <TextView
+        android:id="@+id/item_view_diagnose_result_sub_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="缺少该权限会导致无法进行GPS定位，影响定位准确性缺少该权限会导致无法进行GPS定位，影响定位准确性"
+        android:textColor="#666666"
+        android:textSize="10dp" />
+
+</LinearLayout>

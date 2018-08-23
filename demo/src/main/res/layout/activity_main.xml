@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef">
+
+    <Button
+        android:id="@+id/main_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="定位权限引导"/>
+
+    <Button
+        android:id="@+id/main_diagnose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="定位异常检测"/>
+
+</LinearLayout>

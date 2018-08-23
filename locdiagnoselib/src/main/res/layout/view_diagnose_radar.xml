@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="android.widget.FrameLayout"
+    tools:layout_width="match_parent"
+    tools:layout_height="match_parent"
+    tools:background="#45b7ff">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/view_diagnose_radar_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:text="异常诊断"/>
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/view_diagnose_radar_bg"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_diagnosing_sweep"/>
+
+    <TextView
+        android:id="@+id/view_diagnose_radar_waiting"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:text="诊断中"
+        android:textColor="#ffffff"/>
+
+    <!-- 这里应该使用ViewPager比较方便，但作为sdk不方便引入v4库，采取另一种方式 -->
+    <HorizontalScrollView
+        android:id="@+id/view_diagnose_radar_status_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="16dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/view_diagnose_radar_status_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!-- width and margin are dynamically changed in code -->
+            <!--<include layout="@layout/view_diagnose_radar_status"/>-->
+            <!--<include layout="@layout/view_diagnose_radar_status"/>-->
+            <!--<include layout="@layout/view_diagnose_radar_status"/>-->
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</merge>

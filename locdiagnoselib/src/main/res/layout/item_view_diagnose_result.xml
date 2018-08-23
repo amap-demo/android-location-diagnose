@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/item_view_diagnose_result_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        tools:src="@drawable/wifi"/>
+
+    <TextView
+        android:id="@+id/item_view_diagnose_result_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_view_diagnose_result_icon"
+        android:layout_marginTop="20dp"
+        android:textSize="14dp"
+        android:textColor="#333333"
+        android:text="定位相关权限"/>
+
+    <TextView
+        android:id="@+id/item_view_diagnose_result_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_view_diagnose_result_icon"
+        android:layout_below="@id/item_view_diagnose_result_title"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="60dp"
+        android:textSize="10dp"
+        android:textColor="#ec5757"
+        android:text="定位相关权限异常"/>
+
+    <ImageView
+        android:id="@+id/item_view_diagnose_result_ok"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        tools:src="@drawable/ok"/>
+
+    <LinearLayout
+        android:id="@+id/item_view_diagnose_result_sub"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_view_diagnose_result_desc"
+        android:layout_marginLeft="62dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone">
+
+        <!--<include layout="@layout/item_view_diagnose_result_sub"/>-->
+        <!--<include layout="@layout/item_view_diagnose_result_sub"/>-->
+
+    </LinearLayout>
+
+</RelativeLayout>
